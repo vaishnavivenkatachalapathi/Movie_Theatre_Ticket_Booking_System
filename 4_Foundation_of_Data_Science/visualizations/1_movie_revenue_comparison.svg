@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title & Subtitle -->
+  <text x="425" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 1: Movie-Wise Box Office Gross vs Net Revenue</text>
+  <text x="425" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Scenario 30: Movie Theatre Ticket Booking and Box Office Analysis System</text>
+  
+  <!-- Y-Axis Grid Lines & Labels -->
+  <g stroke="#ecf0f1" stroke-width="1">
+    <line x1="80" y1="380" x2="800" y2="380" />
+    <line x1="80" y1="320" x2="800" y2="320" />
+    <line x1="80" y1="260" x2="800" y2="260" />
+    <line x1="80" y1="200" x2="800" y2="200" />
+    <line x1="80" y1="140" x2="800" y2="140" />
+    <line x1="80" y1="80" x2="800" y2="80" />
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="70" y="384">₹0</text>
+    <text x="70" y="324">₹1,500</text>
+    <text x="70" y="264">₹3,000</text>
+    <text x="70" y="204">₹4,500</text>
+    <text x="70" y="144">₹6,000</text>
+    <text x="70" y="84">₹7,500</text>
+  </g>
+  <text x="25" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" transform="rotate(-90 25,230)" text-anchor="middle">Revenue in INR (₹)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="380" x2="800" y2="380" stroke="#bdc3c7" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="380" stroke="#bdc3c7" stroke-width="2" />
+
+  <!-- Bars Data: Scale = 300px for 7500 => 0.04 px per rupee -->
+  <!-- 1. Avatar (Gross: 6950 -> h: 278, Net: 6950 -> h: 278) -->
+  <rect x="110" y="102" width="40" height="278" fill="#1f77b4" rx="4" />
+  <rect x="155" y="102" width="40" height="278" fill="#2ca02c" rx="4" />
+  <text x="130" y="94" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹6,950</text>
+  <text x="175" y="94" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹6,950</text>
+
+  <!-- 2. Jailer (Gross: 5240 -> h: 209.6, Net: 4592 -> h: 183.7) -->
+  <rect x="230" y="170" width="40" height="210" fill="#1f77b4" rx="4" />
+  <rect x="275" y="196" width="40" height="184" fill="#2ca02c" rx="4" />
+  <text x="250" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹5,240</text>
+  <text x="295" y="188" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹4,592</text>
+
+  <!-- 3. Leo (Gross: 3500 -> h: 140, Net: 3500 -> h: 140) -->
+  <rect x="350" y="240" width="40" height="140" fill="#1f77b4" rx="4" />
+  <rect x="395" y="240" width="40" height="140" fill="#2ca02c" rx="4" />
+  <text x="370" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹3,500</text>
+  <text x="415" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹3,500</text>
+
+  <!-- 4. PS-2 (Gross: 3000 -> h: 120, Net: 3000 -> h: 120) -->
+  <rect x="470" y="260" width="40" height="120" fill="#1f77b4" rx="4" />
+  <rect x="515" y="260" width="40" height="120" fill="#2ca02c" rx="4" />
+  <text x="490" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹3,000</text>
+  <text x="535" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹3,000</text>
+
+  <!-- 5. Interstellar (Gross: 2800 -> h: 112, Net: 2800 -> h: 112) -->
+  <rect x="590" y="268" width="40" height="112" fill="#1f77b4" rx="4" />
+  <rect x="635" y="268" width="40" height="112" fill="#2ca02c" rx="4" />
+  <text x="610" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹2,800</text>
+  <text x="655" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹2,800</text>
+
+  <!-- 6. Oppenheimer (Gross: 1350 -> h: 54, Net: 930 -> h: 37) -->
+  <rect x="710" y="326" width="40" height="54" fill="#1f77b4" rx="4" />
+  <rect x="755" y="343" width="40" height="37" fill="#2ca02c" rx="4" />
+  <text x="730" y="318" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f77b4" text-anchor="middle">₹1,350</text>
+  <text x="775" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2ca02c" text-anchor="middle">₹930</text>
+
+  <!-- X-Axis Labels -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2c3e50" text-anchor="middle">
+    <text x="152" y="405">Avatar: Way of Water</text>
+    <text x="272" y="405">Jailer</text>
+    <text x="392" y="405">Leo</text>
+    <text x="512" y="405">Ponniyin Selvan 2</text>
+    <text x="632" y="405">Interstellar</text>
+    <text x="752" y="405">Oppenheimer</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(560, 435)">
+    <rect x="0" y="0" width="16" height="16" fill="#1f77b4" rx="2" />
+    <text x="24" y="13" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#2c3e50">Gross Revenue (₹)</text>
+    <rect x="150" y="0" width="16" height="16" fill="#2ca02c" rx="2" />
+    <text x="174" y="13" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#2c3e50">Net Revenue (₹)</text>
+  </g>
+</svg>

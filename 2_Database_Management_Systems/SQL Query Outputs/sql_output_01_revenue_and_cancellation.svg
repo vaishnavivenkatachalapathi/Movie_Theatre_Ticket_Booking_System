@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" font-family="Consolas, 'Courier New', monospace">
+  <rect width="980" height="620" fill="#1e1e1e" rx="10"/>
+  <rect width="980" height="36" fill="#2d2d2d" rx="10"/>
+  <rect y="10" width="980" height="26" fill="#2d2d2d"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#28c840"/>
+  <text x="490" y="23" fill="#aaa" font-size="13" text-anchor="middle">MySQL Workbench – Revenue Report Query Output</text>
+  <!-- Query section -->
+  <rect x="20" y="44" width="940" height="80" fill="#12120d" rx="4" stroke="#555" stroke-width="1"/>
+  <text x="30" y="62" fill="#888" font-size="11">SQL Query:</text>
+  <text x="30" y="80" fill="#569cd6" font-size="12">SELECT</text>
+  <text x="90" y="80" fill="#ffffff" font-size="12">m.title, COUNT(b.booking_id) AS total_bookings,</text>
+  <text x="30" y="96" fill="#ffffff" font-size="12">       SUM(b.total_amount) AS total_revenue, AVG(b.total_amount) AS avg_per_booking</text>
+  <text x="30" y="112" fill="#569cd6" font-size="12">FROM</text>
+  <text x="80" y="112" fill="#ffffff" font-size="12">bookings b</text>
+  <text x="30" y="112" fill="#569cd6" font-size="12">JOIN</text>
+  <text x="30" y="96" fill="#569cd6" font-size="12">JOIN</text>
+  <text x="30" y="80" fill="#569cd6" font-size="12">SELECT</text>
+  <!-- Rewrite clean -->
+  <rect x="20" y="44" width="940" height="84" fill="#0d0d08" rx="4" stroke="#444" stroke-width="1"/>
+  <text x="30" y="64" fill="#888888" font-size="11">-- Query 12: Movie-wise Revenue Ranking</text>
+  <text x="30" y="82" fill="#569cd6" font-size="12">SELECT</text><text x="90" y="82" fill="#d4d4d4" font-size="12"> m.title, COUNT(b.booking_id) total_bookings, SUM(b.total_amount) total_revenue</text>
+  <text x="30" y="98" fill="#569cd6" font-size="12">FROM</text><text x="80" y="98" fill="#d4d4d4" font-size="12"> bookings b JOIN show_schedules s ON b.show_id=s.show_id</text>
+  <text x="30" y="114" fill="#569cd6" font-size="12">JOIN</text><text x="80" y="114" fill="#d4d4d4" font-size="12"> movies m ON s.movie_id=m.movie_id</text>
+  <text x="30" y="130" fill="#569cd6" font-size="12">GROUP BY</text><text x="120" y="130" fill="#d4d4d4" font-size="12"> m.title </text><text x="192" y="130" fill="#569cd6" font-size="12">ORDER BY</text><text x="275" y="130" fill="#d4d4d4" font-size="12"> total_revenue DESC;</text>
+  <!-- Result label -->
+  <text x="20" y="156" fill="#28c840" font-size="12">Result: 4 rows returned (0.012 sec)</text>
+  <!-- Result table -->
+  <rect x="20" y="166" width="940" height="28" fill="#1a3a5c"/>
+  <text x="30" y="184" fill="#00bfff" font-size="12" font-weight="bold">title                     | total_bookings | total_revenue</text>
+  <text x="20" y="194" fill="#444" font-size="10">────────────────────────────────────────────────────────────────────</text>
+  <rect x="20" y="198" width="940" height="22" fill="#1a1a1a"/>
+  <text x="30" y="213" fill="#ffffff" font-size="12">Leo                       |             42 |      60,000.00</text>
+  <rect x="20" y="220" width="940" height="22" fill="#252525"/>
+  <text x="30" y="235" fill="#ffffff" font-size="12">Kalki 2898 AD             |            117 |      97,650.00</text>
+  <rect x="20" y="242" width="940" height="22" fill="#1a1a1a"/>
+  <text x="30" y="257" fill="#ffffff" font-size="12">Pushpa 2 – The Rule       |             95 |      44,750.00</text>
+  <rect x="20" y="264" width="940" height="22" fill="#252525"/>
+  <text x="30" y="279" fill="#ffffff" font-size="12">Jawan                     |             38 |      23,390.00</text>
+  <!-- Query 2 -->
+  <text x="20" y="310" fill="#888888" font-size="11">-- Query 7: Tiered Cancellation Refund Analysis</text>
+  <text x="20" y="328" fill="#569cd6" font-size="12">SELECT</text><text x="80" y="328" fill="#d4d4d4" font-size="12"> refund_tier, COUNT(*) cnt, SUM(refund_amount) total_refunds, AVG(refund_percentage) avg_pct</text>
+  <text x="20" y="346" fill="#569cd6" font-size="12">FROM</text><text x="70" y="346" fill="#d4d4d4" font-size="12"> cancellations</text>
+  <text x="20" y="364" fill="#569cd6" font-size="12">GROUP BY</text><text x="110" y="364" fill="#d4d4d4" font-size="12"> refund_tier</text>
+  <text x="20" y="382" fill="#569cd6" font-size="12">ORDER BY</text><text x="110" y="382" fill="#d4d4d4" font-size="12"> refund_tier;</text>
+  <text x="20" y="404" fill="#28c840" font-size="12">Result: 3 rows returned (0.004 sec)</text>
+  <rect x="20" y="414" width="940" height="28" fill="#1a3a5c"/>
+  <text x="30" y="432" fill="#00bfff" font-size="12" font-weight="bold">refund_tier | cnt | total_refunds | avg_pct</text>
+  <rect x="20" y="442" width="940" height="22" fill="#1a1a1a"/>
+  <text x="30" y="457" fill="#ffffff" font-size="12">1           |   8 |     3,240.00  |   90.00  (Tier-1: &gt;24h)</text>
+  <rect x="20" y="464" width="940" height="22" fill="#252525"/>
+  <text x="30" y="479" fill="#ffffff" font-size="12">2           |   4 |       960.00  |   50.00  (Tier-2: 12-24h)</text>
+  <rect x="20" y="486" width="940" height="22" fill="#1a1a1a"/>
+  <text x="30" y="501" fill="#ffffff" font-size="12">3           |   2 |         0.00  |    0.00  (Tier-3: &lt;2h)</text>
+  <text x="20" y="590" fill="#555555" font-size="11">SQL Query Outputs – Q12: Movie Revenue Ranking + Q7: Cancellation Analysis | velalar_cinemas | 2026-11-16</text>
+</svg>

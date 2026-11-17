@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title -->
+  <text x="375" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 3: Multiplex Screen Occupancy Dispersion (Box Plot)</text>
+  <text x="375" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Showing Median, Interquartile Range (IQR) and Whiskers across Multiplex Screens</text>
+
+  <!-- Y Grid -->
+  <g stroke="#ecf0f1" stroke-width="1">
+    <line x1="80" y1="360" x2="700" y2="360" />
+    <line x1="80" y1="290" x2="700" y2="290" />
+    <line x1="80" y1="220" x2="700" y2="220" />
+    <line x1="80" y1="150" x2="700" y2="150" />
+    <line x1="80" y1="80" x2="700" y2="80" />
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="70" y="364">50%</text>
+    <text x="70" y="294">62.5%</text>
+    <text x="70" y="224">75%</text>
+    <text x="70" y="154">87.5%</text>
+    <text x="70" y="84">100%</text>
+  </g>
+  <text x="25" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" transform="rotate(-90 25,220)" text-anchor="middle">Occupancy Rate (%)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="360" x2="700" y2="360" stroke="#bdc3c7" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="360" stroke="#bdc3c7" stroke-width="2" />
+
+  <!-- Screen 1: Audi 1 - IMAX (x=160, median=85.7% -> y=160, q1=75% -> y=220, q3=95% -> y=108, min=70%->248, max=95%->108) -->
+  <line x1="160" y1="108" x2="160" y2="248" stroke="#2c3e50" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="130" y="108" width="60" height="112" fill="#3498db" fill-opacity="0.6" stroke="#2980b9" stroke-width="2" rx="3" />
+  <line x1="130" y1="160" x2="190" y2="160" stroke="#e74c3c" stroke-width="3" />
+  <!-- Whiskers -->
+  <line x1="145" y1="108" x2="175" y2="108" stroke="#2c3e50" stroke-width="2" />
+  <line x1="145" y1="248" x2="175" y2="248" stroke="#2c3e50" stroke-width="2" />
+
+  <!-- Screen 2: Audi 2 - Dolby Atmos (x=310, median=86% -> y=158, q1=78% -> y=203, q3=92% -> y=125, min=75%->220, max=92%->125) -->
+  <line x1="310" y1="125" x2="310" y2="220" stroke="#2c3e50" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="280" y="125" width="60" height="78" fill="#1abc9c" fill-opacity="0.6" stroke="#16a085" stroke-width="2" rx="3" />
+  <line x1="280" y1="158" x2="340" y2="158" stroke="#e74c3c" stroke-width="3" />
+  <line x1="295" y1="125" x2="325" y2="125" stroke="#2c3e50" stroke-width="2" />
+  <line x1="295" y1="220" x2="325" y2="220" stroke="#2c3e50" stroke-width="2" />
+
+  <!-- Screen 3: Audi 3 - Standard (x=460, median=66.3% -> y=268, q1=60% -> y=304, q3=70% -> y=248, min=55%->332, max=72%->236) -->
+  <line x1="460" y1="236" x2="460" y2="332" stroke="#2c3e50" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="430" y="248" width="60" height="56" fill="#e67e22" fill-opacity="0.6" stroke="#d35400" stroke-width="2" rx="3" />
+  <line x1="430" y1="268" x2="490" y2="268" stroke="#e74c3c" stroke-width="3" />
+  <line x1="445" y1="236" x2="475" y2="236" stroke="#2c3e50" stroke-width="2" />
+  <line x1="445" y1="332" x2="475" y2="332" stroke="#2c3e50" stroke-width="2" />
+
+  <!-- Screen 4: Audi 4 - VIP Recliner (x=610, median=99% -> y=86, q1=98% -> y=91, q3=100% -> y=80, min=95%->108, max=100%->80) -->
+  <line x1="610" y1="80" x2="610" y2="108" stroke="#2c3e50" stroke-width="2" stroke-dasharray="4,4" />
+  <rect x="580" y="80" width="60" height="11" fill="#9b59b6" fill-opacity="0.6" stroke="#8e44ad" stroke-width="2" rx="3" />
+  <line x1="580" y1="86" x2="640" y2="86" stroke="#e74c3c" stroke-width="3" />
+  <line x1="595" y1="80" x2="625" y2="80" stroke="#2c3e50" stroke-width="2" />
+  <line x1="595" y1="108" x2="625" y2="108" stroke="#2c3e50" stroke-width="2" />
+
+  <!-- X Labels -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    <text x="160" y="385">Audi 1 (IMAX)</text>
+    <text x="310" y="385">Audi 2 (Atmos)</text>
+    <text x="460" y="385">Audi 3 (Standard)</text>
+    <text x="610" y="385">Audi 4 (VIP)</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(260, 420)">
+    <line x1="0" y1="8" x2="25" y2="8" stroke="#e74c3c" stroke-width="3" />
+    <text x="35" y="12" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#2c3e50">Red Line = Median Occupancy</text>
+    <rect x="220" y="0" width="16" height="16" fill="#3498db" fill-opacity="0.6" stroke="#2980b9" stroke-width="1.5" />
+    <text x="245" y="12" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#2c3e50">Box = Middle 50% (IQR)</text>
+  </g>
+</svg>

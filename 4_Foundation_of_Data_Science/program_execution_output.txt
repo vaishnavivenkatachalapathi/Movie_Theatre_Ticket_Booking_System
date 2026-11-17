@@ -1,0 +1,49 @@
+===============================================================================
+   VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS), ERODE - 12
+          DEPARTMENT OF INFORMATION TECHNOLOGY - ACADEMIC YEAR 2026-27
+       FOUNDATIONS OF DATA SCIENCE (25ITC31) - PROGRAM EXECUTION OUTPUT
+===============================================================================
+
+1. DATASET INGESTION & SUMMARY
+-------------------------------------------------------------------------------
+Source Dataset File    : theatre_bookings.csv
+Total Transactions     : 25 booking records
+Total Tickets Sold     : 94 tickets
+Total Gross Revenue    : Rs. 21,790.00
+Dataset Completeness   : 100% (No missing / null values across 22 attributes)
+
+2. MOVIE POPULARITY (TICKETS SOLD RANKING, NOT MONETARY REVENUE)
+-------------------------------------------------------------------------------
+Rank Movie Title                  Tickets Sold    Orders Placed   Market Share
+-------------------------------------------------------------------------------
+1    Avatar: The Way of Water     27 tickets      5 orders        28.7%
+2    Jailer                       26 tickets      4 orders        27.7%
+3    Ponniyin Selvan Part 2       12 tickets      4 orders        12.8%
+4    Leo                          10 tickets      3 orders        10.6%
+5    Interstellar: Re-release     10 tickets      3 orders        10.6%
+6    Oppenheimer                  9 tickets       6 orders         9.6%
+-------------------------------------------------------------------------------
+Total Tickets Sold Across Catalog: 94 tickets
+
+3. DAY-BY-DAY DAILY BOOKING TRENDS & VELOCITY
+-------------------------------------------------------------------------------
+Date         Orders Placed   Tickets Sold    Daily Revenue     Velocity Chart
+-------------------------------------------------------------------------------
+2026-11-10   2 orders        6 tickets       Rs. 1500.00       ■■■
+2026-11-11   2 orders        11 tickets      Rs. 3050.00       ■■■■■■
+2026-11-12   2 orders        7 tickets       Rs. 1620.00       ■■■■
+2026-11-13   3 orders        12 tickets      Rs. 2560.00       ■■■■■■
+2026-11-14   3 orders        9 tickets       Rs. 2160.00       ■■■■■
+2026-11-15   13 orders       49 tickets      Rs. 10900.00      ■■■■■■■■■■■■■■■■■■■■■■■■■
+-------------------------------------------------------------------------------
+Insight: Noticeable 5.4x surge in velocity on Nov 15 due to weekend opening rush.
+
+4. DESCRIPTIVE STATISTICS FOR TICKET VOLUMES & OCCUPANCY
+-------------------------------------------------------------------------------
+Metric                       Mean        Std Dev     Median      IQR (Q3 - Q1)
+-------------------------------------------------------------------------------
+Tickets per Order            3.76        2.05        3.00        3.00 (5 - 2)
+Ticket Price (INR)           Rs. 231.20  Rs. 43.14   Rs. 220.00  Rs. 60.00
+Show Occupancy Rate (%)      78.48%      12.92%      80.00%      17.00%
+Gross Amount per Order       Rs. 871.60  Rs. 513.25  Rs. 720.00  Rs. 760.00
+===============================================================================

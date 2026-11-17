@@ -1,0 +1,57 @@
+===============================================================================
+   VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS), ERODE - 12
+          DEPARTMENT OF INFORMATION TECHNOLOGY - ACADEMIC YEAR 2026-27
+   DATABASE MANAGEMENT SYSTEMS (25ITT31) - SQL QUERY EXECUTION OUTPUT
+===============================================================================
+
+1. QUERY: SELECT * FROM movies ORDER BY movie_id;
+-------------------------------------------------------------------------------
+movie_id title                        genre        language   duration   rating
+-------------------------------------------------------------------------------
+M001     Avatar: The Way of Water     Sci-Fi       English    192 min    8.8
+M002     Jailer                       Action       Tamil      168 min    8.5
+M003     Leo                          Action       Tamil      164 min    8.2
+M004     Ponniyin Selvan Part 2       Historical   Tamil      164 min    8.4
+M005     Interstellar: Re-release     Sci-Fi       English    169 min    8.9
+M006     Oppenheimer                  Biography    English    180 min    8.9
+Rows returned: 6
+
+2. QUERY: SELECT * FROM screens;
+-------------------------------------------------------------------------------
+screen_id screen_name                      total_capacity
+-------------------------------------------------------------------------------
+1         Audi 1 - IMAX Laser              120 seats
+2         Audi 2 - Dolby Atmos 4K          100 seats
+3         Audi 3 - RealD 3D Premium        80 seats
+4         Audi 4 - VIP Recliner Lounge     50 seats
+Rows returned: 4
+
+3. QUERY: SELECT * FROM vw_show_schedule_occupancy;
+-------------------------------------------------------------------------------
+show_id  movie_title               screen_name               show_time  price      avail_seats
+-------------------------------------------------------------------------------
+501      Avatar: The Way of Water  Audi 1 - IMAX Laser       10:00 AM   Rs. 250.00 30
+502      Avatar: The Way of Water  Audi 1 - IMAX Laser       02:30 PM   Rs. 250.00 18
+503      Avatar: The Way of Water  Audi 1 - IMAX Laser       07:00 PM   Rs. 300.00 6
+504      Jailer                    Audi 2 - Dolby Atmos 4K   11:00 AM   Rs. 180.00 18
+505      Jailer                    Audi 2 - Dolby Atmos 4K   03:30 PM   Rs. 180.00 22
+506      Jailer                    Audi 2 - Dolby Atmos 4K   08:00 PM   Rs. 220.00 8
+507      Leo                       Audi 3 - RealD 3D Premium 06:30 PM   Rs. 200.00 10
+Rows returned: 7
+
+4. QUERY: AGGREGATE REVENUE BY MOVIE (GROUP BY & ORDER BY)
+-------------------------------------------------------------------------------
+movie_title                  total_orders    gross_revenue
+-------------------------------------------------------------------------------
+Avatar: The Way of Water     3               Rs. 4050.00
+Jailer                       2               Rs. 2120.00
+Leo                          0               Rs. 0.00
+-------------------------------------------------------------------------------
+Total Active Revenue: Rs. 6170.00
+
+5. TRANSACTION LOG: ATOMIC TICKET RESERVATION & TRIGGER
+-------------------------------------------------------------------------------
+[TXN START] Customer: Vaishnavi V | Show: #501 | Tickets: 4 | Price: Rs.250.00
+[TRIGGER] trg_update_seats_on_booking fired -> Show #501 seats decremented: 34 -> 30
+[TXN COMMIT] Booking #1001 recorded successfully with Status CONFIRMED.
+===============================================================================

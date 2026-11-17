@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 450" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title -->
+  <text x="375" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 5: Price Elasticity - Ticket Price vs. Show Occupancy Rate</text>
+  <text x="375" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Showing Inelastic Demand for Premium Formats (IMAX &amp; VIP Recliner)</text>
+
+  <!-- Y Grid (50% to 100%, 300px height) -->
+  <g stroke="#ecf0f1" stroke-width="1">
+    <line x1="80" y1="360" x2="700" y2="360" />
+    <line x1="80" y1="300" x2="700" y2="300" />
+    <line x1="80" y1="240" x2="700" y2="240" />
+    <line x1="80" y1="180" x2="700" y2="180" />
+    <line x1="80" y1="120" x2="700" y2="120" />
+    <line x1="80" y1="60" x2="700" y2="60" />
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="70" y="364">50%</text>
+    <text x="70" y="304">60%</text>
+    <text x="70" y="244">70%</text>
+    <text x="70" y="184">80%</text>
+    <text x="70" y="124">90%</text>
+    <text x="70" y="64">100%</text>
+  </g>
+  <text x="25" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" transform="rotate(-90 25,210)" text-anchor="middle">Show Occupancy (%)</text>
+
+  <!-- X Grid & Labels (₹100 to ₹400, 600px width -> 2px per ₹) -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="middle">
+    <text x="80" y="380">₹100</text>
+    <text x="180" y="380">₹150</text>
+    <text x="280" y="380">₹200</text>
+    <text x="380" y="380">₹250</text>
+    <text x="480" y="380">₹300</text>
+    <text x="580" y="380">₹350</text>
+    <text x="680" y="380">₹400</text>
+  </g>
+  <text x="390" y="415" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="middle">Ticket Price in INR (₹)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="360" x2="700" y2="360" stroke="#bdc3c7" stroke-width="2" />
+  <line x1="80" y1="60" x2="80" y2="360" stroke="#bdc3c7" stroke-width="2" />
+
+  <!-- Linear Regression Line (y = mx + c: at ₹150 -> 64%, at ₹350 -> 98%) -->
+  <!-- at ₹150 (x=180), y = 360 - (64-50)*6 = 276 -->
+  <!-- at ₹350 (x=580), y = 360 - (98-50)*6 = 72 -->
+  <line x1="140" y1="312" x2="620" y2="40" stroke="#1f77b4" stroke-width="3" stroke-dasharray="6,4" />
+
+  <!-- Data Points (Circles) -->
+  <!-- Standard Digital shows: ₹150 -> 60%, 65% -->
+  <circle cx="180" cy="300" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <circle cx="180" cy="270" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <text x="180" y="325" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">Standard (₹150)</text>
+
+  <!-- PS-2 show: ₹160 -> 70% (x=200, y=240) -->
+  <circle cx="200" cy="240" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Dolby Atmos: ₹180 -> 78%, 82% (x=240, y=192, 168) -->
+  <circle cx="240" cy="192" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <circle cx="240" cy="168" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+
+  <!-- Dolby Atmos Night: ₹220 -> 92% (x=320, y=108) -->
+  <circle cx="320" cy="108" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+
+  <!-- IMAX Morning/Matinee: ₹250 -> 75%, 85% (x=380, y=210, 150) -->
+  <circle cx="380" cy="210" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <circle cx="380" cy="150" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">IMAX (₹250)</text>
+
+  <!-- IMAX Evening: ₹300 -> 95% (x=480, y=90) -->
+  <circle cx="480" cy="90" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <text x="480" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">IMAX Laser (₹300)</text>
+
+  <!-- VIP Recliner: ₹350 -> 98%, 100% (x=580, y=72, 60) -->
+  <circle cx="580" cy="72" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <circle cx="580" cy="60" r="7" fill="#d62728" opacity="0.8" stroke="#ffffff" stroke-width="2" />
+  <text x="580" y="45" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle">VIP Recliner (₹350)</text>
+
+  <!-- Legend -->
+  <g transform="translate(480, 420)">
+    <circle cx="10" cy="8" r="6" fill="#d62728" />
+    <text x="24" y="12" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2c3e50">Show Data Point</text>
+    <line x1="140" y1="8" x2="170" y2="8" stroke="#1f77b4" stroke-width="2" stroke-dasharray="4,3" />
+    <text x="180" y="12" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#2c3e50">Regression Trendline</text>
+  </g>
+</svg>

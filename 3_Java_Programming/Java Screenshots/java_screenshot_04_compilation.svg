@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" font-family="Consolas, 'Courier New', monospace">
+  <rect width="960" height="520" fill="#1e1e1e" rx="10"/>
+  <rect width="960" height="36" fill="#2d2d2d" rx="10"/>
+  <rect y="10" width="960" height="26" fill="#2d2d2d"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#28c840"/>
+  <text x="480" y="23" fill="#aaa" font-size="13" text-anchor="middle">Command Prompt – Class Compilation Verification</text>
+  <text x="20" y="58" fill="#00ff41" font-size="12">C:\Activity&gt; javac -d 3_Java_Programming\bin -sourcepath 3_Java_Programming\src 3_Java_Programming\src\com\theatre\app\MovieTheatreApp.java</text>
+  <text x="20" y="80" fill="#28c840" font-size="12">(no errors, no warnings)</text>
+  <text x="20" y="104" fill="#00ff41" font-size="12">C:\Activity&gt; dir 3_Java_Programming\bin\com\theatre /s /b</text>
+  <text x="20" y="126" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\app\MovieTheatreApp.class</text>
+  <text x="20" y="144" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\concurrency\ConcurrentBookingSimulator.class</text>
+  <text x="20" y="162" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\dao\BookingDAO.class</text>
+  <text x="20" y="180" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\exception\InvalidBookingException.class</text>
+  <text x="20" y="198" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\exception\OverbookingException.class</text>
+  <text x="20" y="216" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\exception\ShowNotFoundException.class</text>
+  <text x="20" y="234" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\Booking.class</text>
+  <text x="20" y="252" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\Cancellation.class</text>
+  <text x="20" y="270" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\Customer.class</text>
+  <text x="20" y="288" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\Movie.class</text>
+  <text x="20" y="306" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\Screen.class</text>
+  <text x="20" y="324" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\model\ShowSchedule.class</text>
+  <text x="20" y="342" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\service\BookingService.class</text>
+  <text x="20" y="360" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\service\CancellationService.class</text>
+  <text x="20" y="378" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\service\ReportService.class</text>
+  <text x="20" y="396" fill="#ffffff" font-size="12">C:\Activity\3_Java_Programming\bin\com\theatre\test\BookingServiceTest.class</text>
+  <text x="20" y="420" fill="#28c840" font-size="12">16 .class files compiled successfully.</text>
+  <text x="20" y="444" fill="#00ff41" font-size="12">C:\Activity&gt; <tspan fill="#ffff00">_</tspan></text>
+  <text x="20" y="490" fill="#555555" font-size="11">Java Screenshot – Compilation Output (16 class files) | Velalar Cinemas v1.0 | 2026-11-16</text>
+</svg>

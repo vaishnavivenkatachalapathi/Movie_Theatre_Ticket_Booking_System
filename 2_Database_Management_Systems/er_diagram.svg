@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 960" width="100%" height="100%">
+  <defs>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12" />
+    </filter>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8fafc" />
+
+  <!-- ================= TOP HEADER BANNER (NO OVERLAP ZONE: y=0 to y=85) ================= -->
+  <g transform="translate(30, 15)">
+    <rect width="1290" height="70" rx="8" fill="url(#headerGrad)" filter="url(#cardShadow)" />
+    <rect width="1290" height="5" y="65" rx="2" fill="#38bdf8" />
+    <text x="645" y="33" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">ENTITY-RELATIONSHIP (E-R) DIAGRAM</text>
+    <text x="645" y="54" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#e0f2fe" text-anchor="middle">Scenario 30: Movie Theatre Ticket Booking and Box Office Analysis System • Course: 25ITT31 (DBMS)</text>
+  </g>
+
+  <!-- ================= ENTITY 1: MOVIE (x=210, y=170) ================= -->
+  <!-- Connecting lines to MOVIE attributes -->
+  <line x1="210" y1="170" x2="80" y2="120" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="170" x2="190" y2="115" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="170" x2="300" y2="115" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="170" x2="70" y2="170" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="170" x2="75" y2="225" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="170" x2="160" y2="245" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- MOVIE Attributes -->
+  <ellipse cx="80" cy="120" rx="50" ry="18" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="80" y="124" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" text-decoration="underline">movie_id (PK)</text>
+
+  <ellipse cx="190" cy="115" rx="38" ry="17" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="190" y="119" font-family="Segoe UI, sans-serif" font-size="10" fill="#1e3a8a" text-anchor="middle">title</text>
+
+  <ellipse cx="300" cy="115" rx="38" ry="17" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="300" y="119" font-family="Segoe UI, sans-serif" font-size="10" fill="#1e3a8a" text-anchor="middle">genre</text>
+
+  <ellipse cx="70" cy="170" rx="42" ry="17" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="70" y="174" font-family="Segoe UI, sans-serif" font-size="10" fill="#1e3a8a" text-anchor="middle">language</text>
+
+  <ellipse cx="75" cy="225" rx="50" ry="17" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="75" y="229" font-family="Segoe UI, sans-serif" font-size="10" fill="#1e3a8a" text-anchor="middle">duration_mins</text>
+
+  <ellipse cx="160" cy="245" rx="46" ry="17" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+  <text x="160" y="249" font-family="Segoe UI, sans-serif" font-size="10" fill="#1e3a8a" text-anchor="middle">release_date</text>
+
+  <!-- Entity Box MOVIE -->
+  <rect x="150" y="145" width="120" height="50" rx="6" fill="#1e40af" stroke="#172554" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="210" y="175" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">MOVIE</text>
+
+  <!-- ================= ENTITY 2: SCREEN (x=210, y=390) ================= -->
+  <!-- Connecting lines to SCREEN attributes -->
+  <line x1="210" y1="390" x2="80" y2="340" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="390" x2="70" y2="395" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="210" y1="390" x2="85" y2="455" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- SCREEN Attributes -->
+  <ellipse cx="80" cy="340" rx="48" ry="18" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5" />
+  <text x="80" y="344" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#15803d" text-anchor="middle" text-decoration="underline">screen_id (PK)</text>
+
+  <ellipse cx="70" cy="395" rx="46" ry="17" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5" />
+  <text x="70" y="399" font-family="Segoe UI, sans-serif" font-size="10" fill="#166534" text-anchor="middle">screen_name</text>
+
+  <ellipse cx="85" cy="455" rx="52" ry="17" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5" />
+  <text x="85" y="459" font-family="Segoe UI, sans-serif" font-size="10" fill="#166534" text-anchor="middle">seating_capacity</text>
+
+  <!-- Entity Box SCREEN -->
+  <rect x="150" y="365" width="120" height="50" rx="6" fill="#15803d" stroke="#14532d" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="210" y="395" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">SCREEN</text>
+
+  <!-- ================= RELATIONSHIP 1: SCHEDULED (Movie -> Show) ================= -->
+  <line x1="270" y1="170" x2="355" y2="215" stroke="#1e293b" stroke-width="2" />
+  <polygon points="390,190 435,215 390,240 345,215" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="390" y="219" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">SCHEDULED</text>
+  <text x="285" y="165" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">1</text>
+
+  <!-- ================= RELATIONSHIP 2: HOSTED_IN (Screen -> Show) ================= -->
+  <line x1="270" y1="390" x2="355" y2="345" stroke="#1e293b" stroke-width="2" />
+  <polygon points="390,320 435,345 390,370 345,345" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="390" y="349" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">HOSTED_IN</text>
+  <text x="285" y="405" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#15803d">1</text>
+
+  <!-- Lines from relationships to SHOW_SCHEDULE -->
+  <line x1="435" y1="215" x2="520" y2="265" stroke="#1e293b" stroke-width="2" />
+  <text x="495" y="250" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#7e22ce">N</text>
+
+  <line x1="435" y1="345" x2="520" y2="295" stroke="#1e293b" stroke-width="2" />
+  <text x="495" y="310" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#7e22ce">N</text>
+
+  <!-- ================= ENTITY 3: SHOW_SCHEDULE (x=590, y=280) ================= -->
+  <!-- Connecting lines to SHOW_SCHEDULE attributes -->
+  <line x1="590" y1="255" x2="495" y2="180" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="590" y1="255" x2="590" y2="175" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="590" y1="255" x2="685" y2="180" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="590" y1="305" x2="530" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="590" y1="305" x2="640" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- SHOW_SCHEDULE Attributes -->
+  <ellipse cx="495" cy="180" rx="46" ry="18" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5" />
+  <text x="495" y="184" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8" text-anchor="middle" text-decoration="underline">show_id (PK)</text>
+
+  <ellipse cx="590" cy="175" rx="42" ry="17" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5" />
+  <text x="590" y="179" font-family="Segoe UI, sans-serif" font-size="10" fill="#6b21a8" text-anchor="middle">show_date</text>
+
+  <ellipse cx="685" cy="180" rx="42" ry="17" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5" />
+  <text x="685" y="184" font-family="Segoe UI, sans-serif" font-size="10" fill="#6b21a8" text-anchor="middle">show_time</text>
+
+  <ellipse cx="530" cy="385" rx="44" ry="17" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5" />
+  <text x="530" y="389" font-family="Segoe UI, sans-serif" font-size="10" fill="#6b21a8" text-anchor="middle">ticket_price</text>
+
+  <ellipse cx="640" cy="385" rx="50" ry="17" fill="#f3e8ff" stroke="#a855f7" stroke-width="1.5" />
+  <text x="640" y="389" font-family="Segoe UI, sans-serif" font-size="10" fill="#6b21a8" text-anchor="middle">available_seats</text>
+
+  <!-- Entity Box SHOW_SCHEDULE -->
+  <rect x="515" y="255" width="150" height="50" rx="6" fill="#7e22ce" stroke="#581c87" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="590" y="285" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">SHOW_SCHEDULE</text>
+
+  <!-- ================= RELATIONSHIP 3: RESERVED (Show -> Booking) ================= -->
+  <line x1="665" y1="280" x2="745" y2="280" stroke="#1e293b" stroke-width="2" />
+  <polygon points="775,255 815,280 775,305 735,280" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="775" y="284" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">RESERVED</text>
+  <text x="680" y="270" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#7e22ce">1</text>
+
+  <line x1="815" y1="280" x2="895" y2="280" stroke="#1e293b" stroke-width="2" />
+  <text x="875" y="270" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">N</text>
+
+  <!-- ================= ENTITY 4: CUSTOMER (x=960, y=140) ================= -->
+  <!-- Connecting lines to CUSTOMER attributes (Clear from header!) -->
+  <line x1="960" y1="115" x2="865" y2="105" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="960" y1="115" x2="960" y2="98" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="960" y1="115" x2="1055" y2="105" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="960" y1="140" x2="1100" y2="140" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- CUSTOMER Attributes -->
+  <ellipse cx="865" cy="105" rx="52" ry="18" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="865" y="109" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle" text-decoration="underline">customer_id (PK)</text>
+
+  <ellipse cx="960" cy="98" rx="38" ry="17" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="960" y="102" font-family="Segoe UI, sans-serif" font-size="10" fill="#065f46" text-anchor="middle">name</text>
+
+  <ellipse cx="1055" cy="105" rx="38" ry="17" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="1055" y="109" font-family="Segoe UI, sans-serif" font-size="10" fill="#065f46" text-anchor="middle">phone</text>
+
+  <ellipse cx="1100" cy="140" rx="38" ry="17" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="1100" y="144" font-family="Segoe UI, sans-serif" font-size="10" fill="#065f46" text-anchor="middle">email</text>
+
+  <!-- Entity Box CUSTOMER -->
+  <rect x="900" y="115" width="120" height="50" rx="6" fill="#047857" stroke="#064e3b" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="960" y="145" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">CUSTOMER</text>
+
+  <!-- ================= RELATIONSHIP 4: PLACES (Customer -> Booking) ================= -->
+  <line x1="960" y1="165" x2="960" y2="195" stroke="#1e293b" stroke-width="2" />
+  <polygon points="960,195 995,215 960,235 925,215" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="960" y="219" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">PLACES</text>
+  <text x="972" y="180" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#047857">1</text>
+
+  <line x1="960" y1="235" x2="960" y2="255" stroke="#1e293b" stroke-width="2" />
+  <text x="972" y="250" font-family="Segoe UI, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">N</text>
+
+  <!-- ================= ENTITY 5: BOOKING (x=960, y=280) ================= -->
+  <!-- Connecting lines to BOOKING attributes -->
+  <line x1="1025" y1="265" x2="1140" y2="200" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1025" y1="275" x2="1150" y2="250" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1025" y1="285" x2="1150" y2="300" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1025" y1="295" x2="1145" y2="350" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="960" y1="305" x2="1050" y2="385" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- BOOKING Attributes -->
+  <ellipse cx="1140" cy="200" rx="48" ry="18" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="1140" y="204" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#991b1b" text-anchor="middle" text-decoration="underline">booking_id (PK)</text>
+
+  <ellipse cx="1150" cy="250" rx="44" ry="17" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="1150" y="254" font-family="Segoe UI, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">tickets_count</text>
+
+  <!-- Derived attribute: total_amount (Dashed line) -->
+  <ellipse cx="1150" cy="300" rx="46" ry="17" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3" />
+  <text x="1150" y="304" font-family="Segoe UI, sans-serif" font-size="10" font-style="italic" fill="#991b1b" text-anchor="middle">total_amount*</text>
+
+  <ellipse cx="1145" cy="350" rx="46" ry="17" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="1145" y="354" font-family="Segoe UI, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">booking_date</text>
+
+  <ellipse cx="1050" cy="385" rx="46" ry="17" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="1050" y="389" font-family="Segoe UI, sans-serif" font-size="10" fill="#991b1b" text-anchor="middle">booking_status</text>
+
+  <!-- Entity Box BOOKING -->
+  <rect x="895" y="255" width="130" height="50" rx="6" fill="#dc2626" stroke="#991b1b" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="960" y="285" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">BOOKING</text>
+
+  <!-- ================= RELATIONSHIP 5: CANCELLED (Booking -> Cancellation) ================= -->
+  <line x1="910" y1="305" x2="835" y2="455" stroke="#1e293b" stroke-width="2" />
+  <polygon points="835,435 875,460 835,485 795,460" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="835" y="464" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold" fill="#92400e" text-anchor="middle">CANCELLED</text>
+  <text x="890" y="335" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">1</text>
+
+  <line x1="835" y1="485" x2="835" y2="555" stroke="#1e293b" stroke-width="2" />
+  <text x="845" y="525" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#ea580c">0..1</text>
+
+  <!-- ================= RELATIONSHIP 6: PAID_BY (Booking -> Payment) ================= -->
+  <line x1="975" y1="305" x2="1035" y2="455" stroke="#1e293b" stroke-width="2" />
+  <polygon points="1035,435 1070,460 1035,485 1000,460" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+  <text x="1035" y="464" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">PAID_BY</text>
+  <text x="990" y="335" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">1</text>
+
+  <line x1="1035" y1="485" x2="1035" y2="555" stroke="#1e293b" stroke-width="2" />
+  <text x="1045" y="525" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">1</text>
+
+  <!-- ================= ENTITY 6: CANCELLATION (x=835, y=580) ================= -->
+  <!-- Connecting lines to CANCELLATION attributes -->
+  <line x1="835" y1="605" x2="720" y2="670" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="835" y1="605" x2="835" y2="680" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="835" y1="605" x2="930" y2="670" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="775" y1="580" x2="700" y2="580" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- CANCELLATION Attributes -->
+  <ellipse cx="720" cy="670" rx="52" ry="18" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" />
+  <text x="720" y="674" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold" fill="#c2410c" text-anchor="middle" text-decoration="underline">cancellation_id (PK)</text>
+
+  <ellipse cx="835" cy="680" rx="46" ry="17" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" />
+  <text x="835" y="684" font-family="Segoe UI, sans-serif" font-size="10" fill="#c2410c" text-anchor="middle">refund_amount</text>
+
+  <ellipse cx="930" cy="670" rx="46" ry="17" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" />
+  <text x="930" y="674" font-family="Segoe UI, sans-serif" font-size="10" fill="#c2410c" text-anchor="middle">cancellation_fee</text>
+
+  <ellipse cx="700" cy="580" rx="46" ry="17" fill="#ffedd5" stroke="#f97316" stroke-width="1.5" />
+  <text x="700" y="584" font-family="Segoe UI, sans-serif" font-size="9" fill="#c2410c" text-anchor="middle">cancellation_date</text>
+
+  <!-- Entity Box CANCELLATION -->
+  <rect x="775" y="555" width="120" height="50" rx="6" fill="#ea580c" stroke="#9a3412" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="835" y="585" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">CANCELLATION</text>
+
+  <!-- ================= ENTITY 7: PAYMENT (x=1035, y=580) ================= -->
+  <!-- Connecting lines to PAYMENT attributes -->
+  <line x1="1035" y1="605" x2="1010" y2="675" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1035" y1="605" x2="1090" y2="675" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1095" y1="580" x2="1190" y2="560" stroke="#94a3b8" stroke-width="1.5" />
+  <line x1="1095" y1="590" x2="1195" y2="615" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- PAYMENT Attributes -->
+  <ellipse cx="1010" cy="675" rx="46" ry="18" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+  <text x="1010" y="679" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle" text-decoration="underline">payment_id (PK)</text>
+
+  <ellipse cx="1090" cy="675" rx="40" ry="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+  <text x="1090" y="679" font-family="Segoe UI, sans-serif" font-size="10" fill="#0369a1" text-anchor="middle">amount</text>
+
+  <ellipse cx="1190" cy="560" rx="45" ry="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+  <text x="1190" y="564" font-family="Segoe UI, sans-serif" font-size="10" fill="#0369a1" text-anchor="middle">payment_mode</text>
+
+  <ellipse cx="1195" cy="615" rx="45" ry="17" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+  <text x="1195" y="619" font-family="Segoe UI, sans-serif" font-size="10" fill="#0369a1" text-anchor="middle">payment_status</text>
+
+  <!-- Entity Box PAYMENT -->
+  <rect x="975" y="555" width="120" height="50" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" filter="url(#cardShadow)" />
+  <text x="1035" y="585" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">PAYMENT</text>
+
+  <!-- ================= COMPREHENSIVE DESIGN LEGEND (Bottom Left: y=530 to y=920) ================= -->
+  <g transform="translate(60, 530)" filter="url(#cardShadow)">
+    <rect width="560" height="390" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <rect width="560" height="34" rx="10" fill="#f1f5f9" />
+    <rect width="560" height="10" y="24" fill="#f1f5f9" />
+    <text x="280" y="23" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">E-R DIAGRAM NOTATION GUIDE &amp; CARDINALITY MATRIX</text>
+
+    <!-- Column 1: Symbols -->
+    <g transform="translate(20, 50)">
+      <!-- Strong Entity -->
+      <rect x="0" y="0" width="70" height="28" fill="#1e40af" rx="4" />
+      <text x="35" y="18" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">ENTITY</text>
+      <text x="85" y="18" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Strong Entity Set (Physical Table in Database)</text>
+
+      <!-- Relationship -->
+      <polygon points="35,42 65,56 35,70 5,56" fill="#fef3c7" stroke="#d97706" stroke-width="1.8" />
+      <text x="35" y="59" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold" fill="#92400e" text-anchor="middle">REL</text>
+      <text x="85" y="60" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Relationship Set (Associates entities together)</text>
+
+      <!-- Primary Key -->
+      <ellipse cx="35" cy="100" rx="32" ry="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="35" y="104" font-family="Segoe UI, sans-serif" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle" text-decoration="underline">attr_pk</text>
+      <text x="85" y="104" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Primary Key Attribute (Underlined, Unique Identifier)</text>
+
+      <!-- Regular Attribute -->
+      <ellipse cx="35" cy="142" rx="32" ry="14" fill="#f8fafc" stroke="#64748b" stroke-width="1.5" />
+      <text x="35" y="146" font-family="Segoe UI, sans-serif" font-size="9" fill="#334155" text-anchor="middle">attribute</text>
+      <text x="85" y="146" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Simple / Descriptive Attribute</text>
+
+      <!-- Derived Attribute -->
+      <ellipse cx="35" cy="184" rx="34" ry="14" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3" />
+      <text x="35" y="188" font-family="Segoe UI, sans-serif" font-size="8.5" font-style="italic" fill="#991b1b" text-anchor="middle">total_amt*</text>
+      <text x="85" y="188" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Derived Attribute (Dashed: Total = Tickets × Price)</text>
+    </g>
+
+    <!-- Column 2: Explicit Cardinality Rules -->
+    <g transform="translate(20, 275)">
+      <line x1="0" y1="0" x2="520" y2="0" stroke="#e2e8f0" stroke-width="1.5" />
+      <text x="0" y="20" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Structural Mapping Cardinalities &amp; Business Constraints:</text>
+      <text x="10" y="40" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">MOVIE ↔ SHOW_SCHEDULE (1:N):</tspan> One movie has multiple scheduled shows; each show exhibits 1 movie.</text>
+      <text x="10" y="58" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">SCREEN ↔ SHOW_SCHEDULE (1:N):</tspan> One screen hosts multiple shows; each show is assigned to 1 screen.</text>
+      <text x="10" y="76" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">SHOW_SCHEDULE ↔ BOOKING (1:N):</tspan> One show accommodates multiple customer bookings.</text>
+      <text x="10" y="94" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">CUSTOMER ↔ BOOKING (1:N):</tspan> One customer can reserve tickets across multiple shows.</text>
+      <text x="10" y="112" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">BOOKING ↔ CANCELLATION (1:0..1):</tspan> A confirmed booking can optionally be cancelled at most once.</text>
+      <text x="10" y="130" font-family="Segoe UI, sans-serif" font-size="10.5" fill="#475569">• <tspan font-weight="bold">BOOKING ↔ PAYMENT (1:1):</tspan> Each ticket reservation must have exactly one payment settlement record.</text>
+    </g>
+  </g>
+</svg>

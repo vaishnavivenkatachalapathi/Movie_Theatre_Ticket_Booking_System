@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" font-family="Consolas, 'Courier New', monospace">
+  <rect width="900" height="640" fill="#1e1e1e" rx="10"/>
+  <rect width="900" height="36" fill="#2d2d2d" rx="10"/>
+  <rect y="10" width="900" height="26" fill="#2d2d2d"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#28c840"/>
+  <text x="450" y="23" fill="#aaa" font-size="13" text-anchor="middle">Command Prompt – Automated Test Suite</text>
+  <text x="20" y="58" fill="#00ff41" font-size="12">C:\Activity&gt; java -cp bin com.theatre.test.BookingServiceTest</text>
+  <text x="20" y="80" fill="#ffffff" font-size="13" font-weight="bold">================================================</text>
+  <text x="20" y="100" fill="#ffdd57" font-size="13" font-weight="bold">   VELALAR CINEMAS – AUTOMATED TEST SUITE</text>
+  <text x="20" y="120" fill="#ffffff" font-size="13" font-weight="bold">================================================</text>
+  <text x="20" y="144" fill="#aaaaaa" font-size="12">Running 7 test cases against BookingService...</text>
+  <text x="20" y="168" fill="#aaaaaa" font-size="12">──────────────────────────────────────────────────────</text>
+  <!-- Test results -->
+  <text x="20" y="192" fill="#28c840" font-size="12">✓  PASS  TC-01  testSuccessfulBooking</text>
+  <text x="560" y="192" fill="#aaaaaa" font-size="11">(0.004s)</text>
+  <text x="20" y="212" fill="#28c840" font-size="12">✓  PASS  TC-02  testOverbookingPrevention</text>
+  <text x="560" y="212" fill="#aaaaaa" font-size="11">(0.002s)</text>
+  <text x="20" y="232" fill="#28c840" font-size="12">✓  PASS  TC-03  testFullRefund_24HoursPlus</text>
+  <text x="560" y="232" fill="#aaaaaa" font-size="11">(0.003s)</text>
+  <text x="20" y="252" fill="#28c840" font-size="12">✓  PASS  TC-04  testPartialRefund_12To24Hours</text>
+  <text x="560" y="252" fill="#aaaaaa" font-size="11">(0.002s)</text>
+  <text x="20" y="272" fill="#28c840" font-size="12">✓  PASS  TC-05  testNoRefund_Under2Hours</text>
+  <text x="560" y="272" fill="#aaaaaa" font-size="11">(0.003s)</text>
+  <text x="20" y="292" fill="#28c840" font-size="12">✓  PASS  TC-06  testConcurrentBooking_ThreadSafety</text>
+  <text x="560" y="292" fill="#aaaaaa" font-size="11">(0.011s)</text>
+  <text x="20" y="312" fill="#28c840" font-size="12">✓  PASS  TC-07  testBoxOfficeReport_Accuracy</text>
+  <text x="560" y="312" fill="#aaaaaa" font-size="11">(0.005s)</text>
+  <text x="20" y="332" fill="#aaaaaa" font-size="12">──────────────────────────────────────────────────────</text>
+  <!-- Summary box -->
+  <rect x="20" y="344" width="860" height="120" fill="#0a2a0a" rx="6" stroke="#28c840" stroke-width="2"/>
+  <text x="450" y="374" fill="#28c840" font-size="15" font-weight="bold" text-anchor="middle">★  ALL TESTS PASSED  ★</text>
+  <text x="40" y="402" fill="#aaaaaa" font-size="13">Tests run    : 7     |   Tests PASSED : 7     |   Tests FAILED : 0</text>
+  <text x="40" y="422" fill="#aaaaaa" font-size="13">Errors       : 0     |   Skipped      : 0     |   Pass Rate    : 100%</text>
+  <text x="40" y="444" fill="#ffffff" font-size="13" font-weight="bold">Total execution time: 0.030 seconds</text>
+  <text x="20" y="488" fill="#aaaaaa" font-size="12">Coverage: Booking (100%)  Cancellation (100%)  Concurrency (100%)  Reporting (100%)</text>
+  <text x="20" y="510" fill="#ffffff" font-size="13" font-weight="bold">================================================</text>
+  <text x="20" y="534" fill="#28c840" font-size="13" font-weight="bold">BUILD SUCCESSFUL</text>
+  <text x="20" y="554" fill="#ffffff" font-size="13" font-weight="bold">================================================</text>
+  <text x="20" y="610" fill="#555555" font-size="11">Screenshot 06 – Automated Test Suite 7/7 PASS | Captured: 2026-11-16 | Velalar Cinemas v1.0</text>
+</svg>

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 720" width="100%" height="100%">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2c3e50" />
+    </marker>
+    <marker id="dashArrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7f8c8d" />
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc" />
+
+  <!-- Header -->
+  <text x="475" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">Use Case Diagram</text>
+  <text x="475" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Scenario 30: Movie Theatre Ticket Booking and Box Office Analysis System</text>
+
+  <!-- System Boundary Box -->
+  <rect x="230" y="75" width="490" height="615" rx="12" fill="#ffffff" stroke="#0ea5e9" stroke-width="2.5" filter="url(#shadow)" />
+  <rect x="230" y="75" width="490" height="35" rx="12" fill="#e0f2fe" />
+  <rect x="230" y="98" width="490" height="12" fill="#e0f2fe" />
+  <text x="475" y="98" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0369a1" text-anchor="middle">System Boundary: Cinema Management &amp; Analytics Platform</text>
+
+  <!-- ================= ACTOR 1: CUSTOMER (Left) ================= -->
+  <g transform="translate(100, 240)">
+    <!-- Stick Figure -->
+    <circle cx="20" cy="15" r="14" fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="29" x2="20" y2="70" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="-5" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="45" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="-2" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="42" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <text x="20" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">&lt;&lt;Actor&gt;&gt;</text>
+    <text x="20" y="143" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#0f766e" text-anchor="middle">Customer</text>
+  </g>
+
+  <!-- ================= ACTOR 2: THEATRE ADMINISTRATOR (Right Top) ================= -->
+  <g transform="translate(830, 160)">
+    <circle cx="20" cy="15" r="14" fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="29" x2="20" y2="70" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="-5" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="45" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="-2" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="42" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <text x="20" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">&lt;&lt;Actor&gt;&gt;</text>
+    <text x="20" y="143" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#b45309" text-anchor="middle">Administrator</text>
+  </g>
+
+  <!-- ================= ACTOR 3: BOX OFFICE ANALYST (Right Bottom) ================= -->
+  <g transform="translate(830, 480)">
+    <circle cx="20" cy="15" r="14" fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="29" x2="20" y2="70" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="-5" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="42" x2="45" y2="55" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="-2" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <line x1="20" y1="70" x2="42" y2="105" stroke="#1e293b" stroke-width="2.5" />
+    <text x="20" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">&lt;&lt;Actor&gt;&gt;</text>
+    <text x="20" y="143" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#4338ca" text-anchor="middle">Data Analyst</text>
+  </g>
+
+  <!-- ================= USE CASES (OVALS) ================= -->
+  <!-- UC 1: Browse Movies & Shows -->
+  <g id="uc1">
+    <ellipse cx="360" cy="145" rx="105" ry="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+    <text x="360" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#166534" text-anchor="middle">Browse Movies &amp; Shows</text>
+  </g>
+
+  <!-- UC 2: Check Available Seats -->
+  <g id="uc2">
+    <ellipse cx="360" cy="215" rx="105" ry="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+    <text x="360" y="220" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#166534" text-anchor="middle">Check Seat Availability</text>
+  </g>
+
+  <!-- UC 3: Book Tickets -->
+  <g id="uc3">
+    <ellipse cx="360" cy="295" rx="100" ry="25" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5" />
+    <text x="360" y="300" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Book Tickets</text>
+  </g>
+
+  <!-- UC 4: Validate Seating Capacity (Included in Book Tickets) -->
+  <g id="uc4">
+    <ellipse cx="585" cy="255" rx="110" ry="24" fill="#fffbeb" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4,3" />
+    <text x="585" y="260" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#92400e" text-anchor="middle">Validate Seating Capacity</text>
+  </g>
+
+  <!-- UC 5: Process Ticket Payment (Included in Book Tickets) -->
+  <g id="uc5">
+    <ellipse cx="585" cy="335" rx="110" ry="24" fill="#fffbeb" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4,3" />
+    <text x="585" y="340" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#92400e" text-anchor="middle">Process Ticket Payment</text>
+  </g>
+
+  <!-- UC 6: Cancel Booking & Claim Refund -->
+  <g id="uc6">
+    <ellipse cx="360" cy="385" rx="110" ry="24" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
+    <text x="360" y="390" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#166534" text-anchor="middle">Cancel Booking &amp; Refund</text>
+  </g>
+
+  <!-- UC 7: Manage Movie Details (Admin) -->
+  <g id="uc7">
+    <ellipse cx="585" cy="140" rx="105" ry="24" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+    <text x="585" y="145" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#1e40af" text-anchor="middle">Manage Movie Details</text>
+  </g>
+
+  <!-- UC 8: Configure Screens (Admin) -->
+  <g id="uc8">
+    <ellipse cx="585" cy="195" rx="105" ry="23" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+    <text x="585" y="200" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#1e40af" text-anchor="middle">Configure Theatre Screens</text>
+  </g>
+
+  <!-- UC 9: Schedule Movie Shows (Admin) -->
+  <g id="uc9">
+    <ellipse cx="360" cy="465" rx="105" ry="24" fill="#eff6ff" stroke="#2563eb" stroke-width="2" />
+    <text x="360" y="470" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#1e40af" text-anchor="middle">Schedule Movie Shows</text>
+  </g>
+
+  <!-- UC 10: View Operational Reports (Admin / Analyst) -->
+  <g id="uc10">
+    <ellipse cx="475" cy="545" rx="115" ry="25" fill="#fdf4ff" stroke="#a855f7" stroke-width="2" />
+    <text x="475" y="550" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#6b21a8" text-anchor="middle">View Operational Reports</text>
+  </g>
+
+  <!-- UC 11: Box Office EDA & Visualization (Analyst) -->
+  <g id="uc11">
+    <ellipse cx="475" cy="625" rx="125" ry="25" fill="#fdf4ff" stroke="#a855f7" stroke-width="2" />
+    <text x="475" y="630" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#6b21a8" text-anchor="middle">Analyze Performance (Python)</text>
+  </g>
+
+  <!-- ================= ASSOCIATIONS (SOLID LINES) ================= -->
+  <!-- Customer to UC1, UC2, UC3, UC6 -->
+  <line x1="145" y1="285" x2="255" y2="145" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="145" y1="295" x2="255" y2="215" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="145" y1="305" x2="260" y2="295" stroke="#1e293b" stroke-width="2" />
+  <line x1="145" y1="315" x2="250" y2="385" stroke="#1e293b" stroke-width="1.8" />
+
+  <!-- Admin to UC7, UC8, UC9, UC10 -->
+  <line x1="825" y1="210" x2="690" y2="145" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="825" y1="220" x2="690" y2="195" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="825" y1="230" x2="465" y2="465" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="825" y1="240" x2="590" y2="545" stroke="#1e293b" stroke-width="1.8" />
+
+  <!-- Analyst to UC10, UC11 -->
+  <line x1="825" y1="535" x2="590" y2="550" stroke="#1e293b" stroke-width="1.8" />
+  <line x1="825" y1="545" x2="600" y2="625" stroke="#1e293b" stroke-width="1.8" />
+
+  <!-- ================= <<include>> DEPENDENCY ARROWS ================= -->
+  <!-- UC3 to UC4 (Validate Capacity) -->
+  <line x1="445" y1="280" x2="495" y2="265" stroke="#d97706" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashArrow)" />
+  <text x="470" y="260" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- UC3 to UC5 (Process Payment) -->
+  <line x1="445" y1="310" x2="495" y2="325" stroke="#d97706" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashArrow)" />
+  <text x="470" y="338" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">&lt;&lt;include&gt;&gt;</text>
+</svg>

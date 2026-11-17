@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 780" width="100%" height="100%">
+  <defs>
+    <marker id="seqArrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a" />
+    </marker>
+    <marker id="dashSeqArrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b" />
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc" />
+
+  <!-- Title -->
+  <text x="525" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">UML Sequence Diagram</text>
+  <text x="525" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Ticket Reservation &amp; Concurrency Flow across Time &amp; Component Lifelines</text>
+
+  <!-- ================= LIFELINE HEADERS ================= -->
+  <!-- 1. Customer (x=80) -->
+  <g transform="translate(15, 80)" filter="url(#shadow)">
+    <rect width="130" height="40" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="2" />
+    <text x="65" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#15803d" text-anchor="middle">:Customer</text>
+  </g>
+  <line x1="80" y1="120" x2="80" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- 2. MovieTheatreApp CLI (x=240) -->
+  <g transform="translate(175, 80)" filter="url(#shadow)">
+    <rect width="130" height="40" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="2" />
+    <text x="65" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">:MovieTheatreApp</text>
+  </g>
+  <line x1="240" y1="120" x2="240" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- 3. BookingServiceImpl (x=430) -->
+  <g transform="translate(360, 80)" filter="url(#shadow)">
+    <rect width="140" height="40" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="2" />
+    <text x="70" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#6d28d9" text-anchor="middle">:BookingServiceImpl</text>
+  </g>
+  <line x1="430" y1="120" x2="430" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- 4. ShowSchedule (x=620) -->
+  <g transform="translate(555, 80)" filter="url(#shadow)">
+    <rect width="130" height="40" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="2" />
+    <text x="65" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="middle">:ShowSchedule</text>
+  </g>
+  <line x1="620" y1="120" x2="620" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- 5. PaymentService (x=790) -->
+  <g transform="translate(730, 80)" filter="url(#shadow)">
+    <rect width="120" height="40" rx="6" fill="#ffffff" stroke="#0891b2" stroke-width="2" />
+    <text x="60" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#0e7490" text-anchor="middle">:PaymentService</text>
+  </g>
+  <line x1="790" y1="120" x2="790" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- 6. MySQL Database (x=950) -->
+  <g transform="translate(890, 80)" filter="url(#shadow)">
+    <rect width="120" height="40" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+    <text x="60" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">:MySQL_Database</text>
+  </g>
+  <line x1="950" y1="120" x2="950" y2="730" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6,4" />
+
+  <!-- ================= ACTIVATION BARS & MESSAGES ================= -->
+  <!-- 1. Customer enters booking request -->
+  <rect x="75" y="140" width="10" height="570" fill="#cbd5e1" stroke="#475569" />
+  <rect x="235" y="150" width="10" height="550" fill="#dbeafe" stroke="#2563eb" />
+  <line x1="85" y1="155" x2="235" y2="155" stroke="#0f172a" stroke-width="1.8" marker-end="url(#seqArrow)" />
+  <text x="160" y="150" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="middle">1: selectShowAndSeats(showId, count)</text>
+
+  <!-- 2. App invokes service -->
+  <rect x="425" y="175" width="10" height="510" fill="#ede9fe" stroke="#7c3aed" />
+  <line x1="245" y1="180" x2="425" y2="180" stroke="#0f172a" stroke-width="1.8" marker-end="url(#seqArrow)" />
+  <text x="335" y="175" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="middle">2: bookTicket(showId, cust, count)</text>
+
+  <!-- 3. Service checks capacity on ShowSchedule -->
+  <rect x="615" y="200" width="10" height="130" fill="#ffedd5" stroke="#ea580c" />
+  <line x1="435" y1="205" x2="615" y2="205" stroke="#0f172a" stroke-width="1.8" marker-end="url(#seqArrow)" />
+  <text x="525" y="200" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="middle">3: reserveSeats(count)</text>
+
+  <!-- Self-call in Show: Synchronized check -->
+  <path d="M 625 220 L 655 220 L 655 240 L 625 240" fill="none" stroke="#ea580c" stroke-width="1.5" marker-end="url(#seqArrow)" />
+  <text x="735" y="234" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#c2410c">synchronized lock check</text>
+
+  <!-- ================= ALT FRAME: SEATS AVAILABLE VS OVERBOOKING ================= -->
+  <rect x="30" y="260" width="990" height="440" fill="#ffffff" fill-opacity="0.4" stroke="#0284c7" stroke-width="2" rx="6" />
+  <path d="M 30 260 L 100 260 L 110 280 L 30 280 Z" fill="#e0f2fe" stroke="#0284c7" stroke-width="1" />
+  <text x="65" y="275" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">alt</text>
+  <text x="125" y="275" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#15803d">[availableSeats &gt;= count : Booking Confirmed]</text>
+
+  <!-- Confirmed flow -->
+  <!-- Show returns success to Service -->
+  <line x1="615" y1="295" x2="435" y2="295" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="525" y="290" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#15803d" text-anchor="middle">4: return true (seats reserved)</text>
+
+  <!-- Service initiates payment -->
+  <rect x="785" y="320" width="10" height="70" fill="#cffafe" stroke="#0891b2" />
+  <line x1="435" y1="325" x2="785" y2="325" stroke="#0f172a" stroke-width="1.8" marker-end="url(#seqArrow)" />
+  <text x="610" y="320" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="middle">5: processPayment(amount, paymentMode)</text>
+
+  <!-- Payment success -->
+  <line x1="785" y1="365" x2="435" y2="365" stroke="#0891b2" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="610" y="360" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0e7490" text-anchor="middle">6: paymentStatus = SUCCESS</text>
+
+  <!-- Service persists into DB -->
+  <rect x="945" y="390" width="10" height="90" fill="#e0f2fe" stroke="#0284c7" />
+  <line x1="435" y1="395" x2="945" y2="395" stroke="#0f172a" stroke-width="1.8" marker-end="url(#seqArrow)" />
+  <text x="690" y="390" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0f172a" text-anchor="middle">7: INSERT INTO booking, payment (ACID Commit)</text>
+
+  <!-- DB trigger fires in MySQL -->
+  <path d="M 955 415 L 985 415 L 985 435 L 955 435" fill="none" stroke="#ca8a04" stroke-width="1.5" marker-end="url(#seqArrow)" />
+  <text x="995" y="430" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#854d0e">Trigger updates available_seats</text>
+
+  <!-- DB confirms commit -->
+  <line x1="945" y1="460" x2="435" y2="460" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="690" y="455" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#0369a1" text-anchor="middle">8: bookingId #1004 generated</text>
+
+  <!-- Service formats receipt & returns to App -->
+  <line x1="425" y1="495" x2="245" y2="495" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="335" y="490" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#15803d" text-anchor="middle">9: Booking Receipt (StringBuilder)</text>
+
+  <!-- App outputs receipt to Customer -->
+  <line x1="235" y1="525" x2="85" y2="525" stroke="#16a34a" stroke-width="2" marker-end="url(#seqArrow)" />
+  <text x="160" y="520" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">10: Display Receipt &amp; Confirmed Seats</text>
+
+  <!-- Divider for else branch -->
+  <line x1="30" y1="550" x2="1020" y2="550" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="6,4" />
+  <text x="125" y="568" font-family="Segoe UI, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">[else: availableSeats &lt; count (Overbooking Prevented)]</text>
+
+  <!-- Else flow -->
+  <!-- Show returns false to Service -->
+  <line x1="615" y1="595" x2="435" y2="595" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="525" y="590" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">11: return false (insufficient seats)</text>
+
+  <!-- Service throws SeatUnavailableException -->
+  <line x1="425" y1="630" x2="245" y2="630" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#dashSeqArrow)" />
+  <text x="335" y="625" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">12: throw SeatUnavailableException</text>
+
+  <!-- App displays error to Customer -->
+  <line x1="235" y1="665" x2="85" y2="665" stroke="#dc2626" stroke-width="2" marker-end="url(#seqArrow)" />
+  <text x="160" y="660" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">13: Display Overbooking Error Notice</text>
+</svg>

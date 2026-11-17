@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title & Subtitle -->
+  <text x="325" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 2: Net Revenue Contribution by Film Genre</text>
+  <text x="325" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Foundations of Data Science (Course: 25ITC31)</text>
+
+  <!-- Donut Chart Geometry (Center at 220, 240, R=140, r=80) -->
+  <g transform="translate(220, 240)">
+    <!-- Sci-Fi: 44.8% (161.3 deg) -->
+    <path d="M 0 -140 A 140 140 0 0 1 45.4 132.4 L 25.9 75.7 A 80 80 0 0 0 0 -80 Z" fill="#3498db" stroke="#ffffff" stroke-width="2" />
+    <!-- Action: 37.2% (133.9 deg) -->
+    <path d="M 45.4 132.4 A 140 140 0 0 1 -128.4 -55.8 L -73.4 -31.9 A 80 80 0 0 0 25.9 75.7 Z" fill="#e74c3c" stroke="#ffffff" stroke-width="2" />
+    <!-- Historical Drama: 13.8% (49.7 deg) -->
+    <path d="M -128.4 -55.8 A 140 140 0 0 1 -34.8 -135.6 L -19.9 -77.5 A 80 80 0 0 0 -73.4 -31.9 Z" fill="#f1c40f" stroke="#ffffff" stroke-width="2" />
+    <!-- Drama: 4.2% (15.1 deg) -->
+    <path d="M -34.8 -135.6 A 140 140 0 0 1 0 -140 L 0 -80 A 80 80 0 0 0 -19.9 -77.5 Z" fill="#9b59b6" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Center text in donut hole -->
+    <text x="0" y="-8" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#7f8c8d" text-anchor="middle">Total Net Revenue</text>
+    <text x="0" y="18" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">₹21,772</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(420, 150)">
+    <!-- Sci-Fi -->
+    <rect x="0" y="0" width="18" height="18" fill="#3498db" rx="3" />
+    <text x="28" y="14" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Sci-Fi (44.8%)</text>
+    <text x="28" y="30" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d">₹9,750 net revenue</text>
+
+    <!-- Action -->
+    <rect x="0" y="48" width="18" height="18" fill="#e74c3c" rx="3" />
+    <text x="28" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Action (37.2%)</text>
+    <text x="28" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d">₹8,092 net revenue</text>
+
+    <!-- Historical Drama -->
+    <rect x="0" y="96" width="18" height="18" fill="#f1c40f" rx="3" />
+    <text x="28" y="110" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Historical Drama (13.8%)</text>
+    <text x="28" y="126" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d">₹3,000 net revenue</text>
+
+    <!-- Drama -->
+    <rect x="0" y="144" width="18" height="18" fill="#9b59b6" rx="3" />
+    <text x="28" y="158" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50">Drama (4.2%)</text>
+    <text x="28" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d">₹930 net revenue</text>
+  </g>
+</svg>

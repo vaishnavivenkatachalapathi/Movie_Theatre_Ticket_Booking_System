@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="640" font-family="Consolas, 'Courier New', monospace">
+  <rect width="980" height="640" fill="#0f172a" rx="10" stroke="#334155" stroke-width="2"/>
+  <rect width="980" height="36" fill="#1e293b" rx="10"/>
+  <rect y="10" width="980" height="26" fill="#1e293b"/>
+  <circle cx="20" cy="18" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="18" r="6" fill="#f59e0b"/>
+  <circle cx="60" cy="18" r="6" fill="#10b981"/>
+  <text x="490" y="23" fill="#94a3b8" font-size="13" text-anchor="middle">Command Prompt – run_datascience.bat (25ITC31 Interactive Analytics)</text>
+
+  <text x="25" y="65" fill="#38bdf8" font-size="12">C:\Activity\4_Foundation_of_Data_Science&gt; run_datascience.bat</text>
+  <text x="25" y="88" fill="#f8fafc" font-size="12">===============================================================================</text>
+  <text x="25" y="106" fill="#38bdf8" font-size="13" font-weight="bold">   VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS), ERODE - 12</text>
+  <text x="25" y="124" fill="#94a3b8" font-size="12">        FOUNDATIONS OF DATA SCIENCE (25ITC31) - INTERACTIVE ANALYTICS</text>
+  <text x="25" y="142" fill="#f8fafc" font-size="12">===============================================================================</text>
+
+  <text x="25" y="165" fill="#a5b4fc" font-size="12">[+] Ingested 25 booking records from theatre_bookings.csv successfully.</text>
+  <text x="25" y="185" fill="#cbd5e1" font-size="12">Enter your option (0-7): <tspan fill="#38bdf8" font-weight="bold">2</tspan>  (Movie Popularity by Number of Tickets Sold)</text>
+
+  <rect x="25" y="200" width="930" height="195" fill="#1e293b" rx="6" stroke="#475569" stroke-width="1"/>
+  <text x="40" y="222" fill="#38bdf8" font-size="12" font-weight="bold">MOVIE POPULARITY RANKING (BY NUMBER OF TICKETS SOLD, NOT REVENUE)</text>
+  <text x="40" y="240" fill="#64748b" font-size="11">-------------------------------------------------------------------------------</text>
+  <text x="40" y="258" fill="#94a3b8" font-size="12" font-weight="bold">Rank  Movie Title                  Tickets Sold    Orders Placed   Market Share</text>
+  <text x="40" y="278" fill="#f8fafc" font-size="12">1     Avatar: The Way of Water     27 tickets      5 orders        28.7%</text>
+  <text x="40" y="296" fill="#f8fafc" font-size="12">2     Jailer                       26 tickets      4 orders        27.7%</text>
+  <text x="40" y="314" fill="#f8fafc" font-size="12">3     Ponniyin Selvan Part 2       12 tickets      4 orders        12.8%</text>
+  <text x="40" y="332" fill="#f8fafc" font-size="12">4     Leo                          10 tickets      3 orders        10.6%</text>
+  <text x="40" y="350" fill="#f8fafc" font-size="12">5     Interstellar: Re-release     10 tickets      3 orders        10.6%</text>
+  <text x="40" y="368" fill="#f8fafc" font-size="12">6     Oppenheimer                  9 tickets       6 orders         9.6%</text>
+  <text x="40" y="386" fill="#34d399" font-size="11">Total Volume Sold: 94 Tickets Across Catalog</text>
+
+  <text x="25" y="420" fill="#cbd5e1" font-size="12">Enter your option (0-7): <tspan fill="#38bdf8" font-weight="bold">3</tspan>  (Day-by-Day Daily Booking Trends)</text>
+  <rect x="25" y="432" width="930" height="150" fill="#1e293b" rx="6" stroke="#475569" stroke-width="1"/>
+  <text x="40" y="452" fill="#38bdf8" font-size="12" font-weight="bold">DAY-BY-DAY DAILY BOOKING &amp; TICKET TRENDS (NOV 10 - NOV 15, 2026)</text>
+  <text x="40" y="470" fill="#64748b" font-size="11">-------------------------------------------------------------------------------</text>
+  <text x="40" y="488" fill="#f8fafc" font-size="12">2026-11-10 :  2 orders  |   6 tickets sold  |  Daily Revenue: Rs.  1,500.00  | ■■■</text>
+  <text x="40" y="506" fill="#f8fafc" font-size="12">2026-11-11 :  2 orders  |  11 tickets sold  |  Daily Revenue: Rs.  3,050.00  | ■■■■■■</text>
+  <text x="40" y="524" fill="#f8fafc" font-size="12">2026-11-12 :  2 orders  |   7 tickets sold  |  Daily Revenue: Rs.  1,620.00  | ■■■■</text>
+  <text x="40" y="542" fill="#f8fafc" font-size="12">2026-11-13 :  3 orders  |  12 tickets sold  |  Daily Revenue: Rs.  2,560.00  | ■■■■■■</text>
+  <text x="40" y="560" fill="#f8fafc" font-size="12">2026-11-14 :  3 orders  |   9 tickets sold  |  Daily Revenue: Rs.  2,160.00  | ■■■■■</text>
+  <text x="40" y="578" fill="#f43f5e" font-size="12" font-weight="bold">2026-11-15 : 13 orders  |  49 tickets sold  |  Daily Revenue: Rs. 10,900.00  | ■■■■■■■■■■■■■■■■ (PEAK)</text>
+
+  <text x="25" y="618" fill="#34d399" font-size="12">✓ Exported full session output to program_execution_output.txt</text>
+</svg>

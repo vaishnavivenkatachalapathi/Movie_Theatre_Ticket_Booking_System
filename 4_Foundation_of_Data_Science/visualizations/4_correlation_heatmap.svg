@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title -->
+  <text x="350" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 4: Pearson Correlation Matrix Heatmap</text>
+  <text x="350" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Foundations of Data Science: Multivariate Correlation Analysis</text>
+
+  <!-- Variables: Price, Tickets, Gross, Refund, Net, Occupancy -->
+  <!-- 5x5 Matrix (start: x=180, y=80, size=80px each) -->
+
+  <!-- Row 1: Price -->
+  <text x="170" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="end">Ticket Price</text>
+  <rect x="180" y="80" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="220" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1.00</text>
+  
+  <rect x="260" y="80" width="80" height="70" fill="#f46d43" stroke="#ffffff" stroke-width="2" />
+  <text x="300" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.24</text>
+  
+  <rect x="340" y="80" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.58</text>
+  
+  <rect x="420" y="80" width="80" height="70" fill="#fee08b" stroke="#ffffff" stroke-width="2" />
+  <text x="460" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.52</text>
+  
+  <rect x="500" y="80" width="80" height="70" fill="#f46d43" stroke="#ffffff" stroke-width="2" />
+  <text x="540" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.68</text>
+
+  <!-- Row 2: Tickets -->
+  <text x="170" y="195" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="end">Tickets Sold</text>
+  <rect x="180" y="150" width="80" height="70" fill="#f46d43" stroke="#ffffff" stroke-width="2" />
+  <text x="220" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.24</text>
+  
+  <rect x="260" y="150" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="300" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1.00</text>
+  
+  <rect x="340" y="150" width="80" height="70" fill="#a50026" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.84</text>
+  
+  <rect x="420" y="150" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="460" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.81</text>
+  
+  <rect x="500" y="150" width="80" height="70" fill="#fee08b" stroke="#ffffff" stroke-width="2" />
+  <text x="540" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.42</text>
+
+  <!-- Row 3: Gross Amount -->
+  <text x="170" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="end">Gross Amount</text>
+  <rect x="180" y="220" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="220" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.58</text>
+  
+  <rect x="260" y="220" width="80" height="70" fill="#a50026" stroke="#ffffff" stroke-width="2" />
+  <text x="300" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.84</text>
+  
+  <rect x="340" y="220" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1.00</text>
+  
+  <rect x="420" y="220" width="80" height="70" fill="#a50026" stroke="#ffffff" stroke-width="2" />
+  <text x="460" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.96</text>
+  
+  <rect x="500" y="220" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="540" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.62</text>
+
+  <!-- Row 4: Net Revenue -->
+  <text x="170" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="end">Net Revenue</text>
+  <rect x="180" y="290" width="80" height="70" fill="#fee08b" stroke="#ffffff" stroke-width="2" />
+  <text x="220" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.52</text>
+  
+  <rect x="260" y="290" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="300" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.81</text>
+  
+  <rect x="340" y="290" width="80" height="70" fill="#a50026" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.96</text>
+  
+  <rect x="420" y="290" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="460" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1.00</text>
+  
+  <rect x="500" y="290" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="540" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.59</text>
+
+  <!-- Row 5: Occupancy % -->
+  <text x="170" y="405" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="end">Occupancy %</text>
+  <rect x="180" y="360" width="80" height="70" fill="#f46d43" stroke="#ffffff" stroke-width="2" />
+  <text x="220" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">0.68</text>
+  
+  <rect x="260" y="360" width="80" height="70" fill="#fee08b" stroke="#ffffff" stroke-width="2" />
+  <text x="300" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.42</text>
+  
+  <rect x="340" y="360" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="380" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.62</text>
+  
+  <rect x="420" y="360" width="80" height="70" fill="#fdae61" stroke="#ffffff" stroke-width="2" />
+  <text x="460" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle">0.59</text>
+  
+  <rect x="500" y="360" width="80" height="70" fill="#d73027" stroke="#ffffff" stroke-width="2" />
+  <text x="540" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1.00</text>
+
+  <!-- Column Headers -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    <text x="220" y="450">Price</text>
+    <text x="300" y="450">Tickets</text>
+    <text x="380" y="450">Gross</text>
+    <text x="460" y="450">Net</text>
+    <text x="540" y="450">Occupancy</text>
+  </g>
+
+  <!-- Colorbar / Scale -->
+  <g transform="translate(610, 100)">
+    <text x="0" y="-10" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#7f8c8d">Scale (r)</text>
+    <rect x="0" y="0" width="20" height="60" fill="#a50026" />
+    <text x="26" y="15" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50">+1.0</text>
+    <rect x="0" y="60" width="20" height="60" fill="#d73027" />
+    <text x="26" y="75" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50">+0.8</text>
+    <rect x="0" y="120" width="20" height="60" fill="#f46d43" />
+    <text x="26" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50">+0.6</text>
+    <rect x="0" y="180" width="20" height="60" fill="#fdae61" />
+    <text x="26" y="195" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50">+0.4</text>
+    <rect x="0" y="240" width="20" height="60" fill="#fee08b" />
+    <text x="26" y="255" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#2c3e50">+0.2</text>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 640" width="100%" height="100%">
+  <defs>
+    <marker id="dfdArrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f172a" />
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc" />
+
+  <!-- Header -->
+  <text x="475" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#0f172a" text-anchor="middle">Data Flow Diagram (DFD) – Level 0</text>
+  <text x="475" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Context Diagram: Overall Boundary &amp; External Entity Data Exchanges</text>
+
+  <!-- ================= CENTRAL PROCESS (0.0) ================= -->
+  <g transform="translate(365, 220)" filter="url(#shadow)">
+    <!-- Main circle/rounded process -->
+    <rect width="220" height="200" rx="30" fill="#ffffff" stroke="#2563eb" stroke-width="2.5" />
+    <rect width="220" height="40" rx="30" fill="#dbeafe" />
+    <rect width="220" height="15" y="25" fill="#dbeafe" />
+    <text x="110" y="26" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">0.0</text>
+    <line x1="0" y1="40" x2="220" y2="40" stroke="#2563eb" stroke-width="1.5" />
+    <text x="110" y="75" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Movie Theatre Ticket</text>
+    <text x="110" y="95" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Booking &amp; Box Office</text>
+    <text x="110" y="115" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Analysis System</text>
+    <text x="110" y="150" font-family="Segoe UI, sans-serif" font-size="11" fill="#475569" text-anchor="middle">(Core Processing Engine)</text>
+  </g>
+
+  <!-- ================= EXTERNAL ENTITY 1: CUSTOMER (Left) ================= -->
+  <g transform="translate(50, 240)" filter="url(#shadow)">
+    <rect width="180" height="160" fill="#ffffff" stroke="#059669" stroke-width="2" rx="4" />
+    <rect width="180" height="30" fill="#d1fae5" rx="4" />
+    <text x="90" y="21" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#065f46" text-anchor="middle">CUSTOMER</text>
+    <line x1="0" y1="30" x2="180" y2="30" stroke="#059669" stroke-width="1.5" />
+    <text x="90" y="65" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Ticket Buyer</text>
+    <text x="90" y="85" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Seat Booker</text>
+    <text x="90" y="105" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Cancellation Applicant</text>
+  </g>
+
+  <!-- ================= EXTERNAL ENTITY 2: ADMINISTRATOR (Right Top) ================= -->
+  <g transform="translate(720, 100)" filter="url(#shadow)">
+    <rect width="180" height="150" fill="#ffffff" stroke="#d97706" stroke-width="2" rx="4" />
+    <rect width="180" height="30" fill="#fef3c7" rx="4" />
+    <text x="90" y="21" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">ADMINISTRATOR</text>
+    <line x1="0" y1="30" x2="180" y2="30" stroke="#d97706" stroke-width="1.5" />
+    <text x="90" y="65" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Theatre Manager</text>
+    <text x="90" y="85" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Screen Scheduler</text>
+    <text x="90" y="105" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Catalog Controller</text>
+  </g>
+
+  <!-- ================= EXTERNAL ENTITY 3: DATA ANALYST (Right Bottom) ================= -->
+  <g transform="translate(720, 390)" filter="url(#shadow)">
+    <rect width="180" height="150" fill="#ffffff" stroke="#7c3aed" stroke-width="2" rx="4" />
+    <rect width="180" height="30" fill="#ede9fe" rx="4" />
+    <text x="90" y="21" font-family="Segoe UI, sans-serif" font-size="13" font-weight="bold" fill="#5b21b6" text-anchor="middle">BOX OFFICE ANALYST</text>
+    <line x1="0" y1="30" x2="180" y2="30" stroke="#7c3aed" stroke-width="1.5" />
+    <text x="90" y="65" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Data Scientist</text>
+    <text x="90" y="85" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Occupancy Analyst</text>
+    <text x="90" y="105" font-family="Segoe UI, sans-serif" font-size="11" fill="#334155" text-anchor="middle">• Revenue Modeler</text>
+  </g>
+
+  <!-- ================= DATA FLOWS: CUSTOMER <-> PROCESS ================= -->
+  <!-- Customer to System (Booking & Cancel Request) -->
+  <path d="M 230 290 Q 295 270 365 285" fill="none" stroke="#0f172a" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="295" y="265" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Booking &amp; Seat Requests</text>
+
+  <path d="M 230 330 Q 295 320 365 325" fill="none" stroke="#0f172a" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="295" y="315" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Cancellation &amp; Refund Request</text>
+
+  <!-- System to Customer (Receipts & Seat Info) -->
+  <path d="M 365 365 Q 295 375 230 365" fill="none" stroke="#059669" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="295" y="385" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#065f46" text-anchor="middle">Confirmed Tickets &amp; Receipts</text>
+
+  <path d="M 365 400 Q 295 420 230 405" fill="none" stroke="#059669" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="295" y="425" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#065f46" text-anchor="middle">Refund Slips &amp; Seat Status</text>
+
+  <!-- ================= DATA FLOWS: ADMIN <-> PROCESS ================= -->
+  <!-- Admin to System (Catalog & Schedules) -->
+  <path d="M 720 160 Q 645 150 560 220" fill="none" stroke="#0f172a" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="660" y="155" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Movie &amp; Screen Configurations</text>
+
+  <path d="M 720 190 Q 660 195 585 245" fill="none" stroke="#0f172a" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="680" y="195" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">Show Timings &amp; Pricing</text>
+
+  <!-- System to Admin (Reports) -->
+  <path d="M 585 280 Q 665 240 720 230" fill="none" stroke="#d97706" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="670" y="255" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Show Occupancy &amp; Revenue Reports</text>
+
+  <!-- ================= DATA FLOWS: PROCESS <-> ANALYST ================= -->
+  <!-- System to Analyst (Raw datasets & views) -->
+  <path d="M 585 360 Q 650 395 720 420" fill="none" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="655" y="380" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#5b21b6" text-anchor="middle">Exported Bookings Dataset (CSV/SQL)</text>
+
+  <!-- Analyst to System (Analytics Queries) -->
+  <path d="M 720 470 Q 640 460 585 410" fill="none" stroke="#0f172a" stroke-width="1.8" marker-end="url(#dfdArrow)" />
+  <text x="660" y="480" font-family="Segoe UI, sans-serif" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">EDA Parameters &amp; Filter Queries</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <!-- Title -->
+  <text x="350" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">Figure 6: Average Theatre Occupancy Rate by Show Time Slot</text>
+  <text x="350" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7f8c8d" text-anchor="middle">Foundations of Data Science: Categorical Time Series Distribution</text>
+
+  <!-- Y Grid (0% to 100%, 250px) -->
+  <g stroke="#ecf0f1" stroke-width="1">
+    <line x1="80" y1="330" x2="640" y2="330" />
+    <line x1="80" y1="270" x2="640" y2="270" />
+    <line x1="80" y1="210" x2="640" y2="210" />
+    <line x1="80" y1="150" x2="640" y2="150" />
+    <line x1="80" y1="90" x2="640" y2="90" />
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="70" y="334">0%</text>
+    <text x="70" y="274">25%</text>
+    <text x="70" y="214">50%</text>
+    <text x="70" y="154">75%</text>
+    <text x="70" y="94">100%</text>
+  </g>
+  <text x="25" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" transform="rotate(-90 25,210)" text-anchor="middle">Average Occupancy (%)</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="330" x2="640" y2="330" stroke="#bdc3c7" stroke-width="2" />
+  <line x1="80" y1="80" x2="80" y2="330" stroke="#bdc3c7" stroke-width="2" />
+
+  <!-- Scale: 240px for 100% -> 2.4px per 1% -->
+  <!-- 1. Morning (65.0% -> h=156, y=174) -->
+  <rect x="130" y="174" width="80" height="156" fill="#440154" rx="4" />
+  <text x="170" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#440154" text-anchor="middle">65.0%</text>
+
+  <!-- 2. Matinee (76.5% -> h=183.6, y=146.4) -->
+  <rect x="260" y="146" width="80" height="184" fill="#31688e" rx="4" />
+  <text x="300" y="134" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#31688e" text-anchor="middle">76.5%</text>
+
+  <!-- 3. Evening (94.2% -> h=226, y=104) -->
+  <rect x="390" y="104" width="80" height="226" fill="#35b779" rx="4" />
+  <text x="430" y="92" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#35b779" text-anchor="middle">94.2%</text>
+
+  <!-- 4. Night (92.0% -> h=220.8, y=109.2) -->
+  <rect x="520" y="109" width="80" height="221" fill="#fde725" stroke="#d4ac0d" stroke-width="1" rx="4" />
+  <text x="560" y="97" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold" fill="#b7950b" text-anchor="middle">92.0%</text>
+
+  <!-- X-Axis Labels -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    <text x="170" y="355">Morning</text>
+    <text x="170" y="372" font-size="10" font-weight="normal" fill="#7f8c8d">(10:00 AM - 11:30 AM)</text>
+
+    <text x="300" y="355">Matinee</text>
+    <text x="300" y="372" font-size="10" font-weight="normal" fill="#7f8c8d">(02:00 PM - 04:00 PM)</text>
+
+    <text x="430" y="355">Evening (Peak)</text>
+    <text x="430" y="372" font-size="10" font-weight="normal" fill="#7f8c8d">(06:00 PM - 07:30 PM)</text>
+
+    <text x="560" y="355">Night</text>
+    <text x="560" y="372" font-size="10" font-weight="normal" fill="#7f8c8d">(08:00 PM - 09:30 PM)</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="640" font-family="Consolas, 'Courier New', monospace">
+  <rect width="980" height="640" fill="#1e1e1e" rx="10" stroke="#444" stroke-width="2"/>
+  <rect width="980" height="36" fill="#2d2d2d" rx="10"/>
+  <rect y="10" width="980" height="26" fill="#2d2d2d"/>
+  <circle cx="20" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#28c840"/>
+  <text x="490" y="23" fill="#aaa" font-size="13" text-anchor="middle">Command Prompt – run_dbms.bat (Interactive SQL Query Simulator)</text>
+
+  <text x="25" y="65" fill="#00ff41" font-size="12">C:\Activity\2_Database_Management_Systems&gt; run_dbms.bat</text>
+  <text x="25" y="88" fill="#ffffff" font-size="12">===============================================================================</text>
+  <text x="25" y="106" fill="#ffdd57" font-size="13" font-weight="bold">   VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS), ERODE - 12</text>
+  <text x="25" y="124" fill="#aaaaaa" font-size="12">     DATABASE MANAGEMENT SYSTEMS (25ITT31) - SQL QUERY &amp; TRANSACTION ENGINE</text>
+  <text x="25" y="142" fill="#ffffff" font-size="12">===============================================================================</text>
+
+  <text x="25" y="165" fill="#00ff41" font-size="12">Enter your option (0-9): <tspan fill="#ffff00" font-weight="bold">7</tspan>  (Perform Ticket Booking Transaction with Trigger)</text>
+
+  <rect x="25" y="180" width="930" height="210" fill="#0d1117" rx="6" stroke="#30363d" stroke-width="1"/>
+  <text x="40" y="202" fill="#58a6ff" font-size="12" font-weight="bold">MANUAL TRANSACTION: START TRANSACTION; INSERT INTO bookings ...; COMMIT;</text>
+  <text x="40" y="222" fill="#c9d1d9" font-size="12">Enter Customer Name : Vaishnavi V</text>
+  <text x="40" y="240" fill="#c9d1d9" font-size="12">Enter Show ID       : 501</text>
+  <text x="40" y="258" fill="#8b949e" font-size="11">Show Details: Movie=Avatar: The Way of Water | Available Seats=30 | Price=Rs. 250.00</text>
+  <text x="40" y="278" fill="#c9d1d9" font-size="12">Enter Number of Tickets to Book: 4</text>
+  <text x="40" y="302" fill="#7ee787" font-size="12" font-weight="bold">COMMIT TRANSACTION;</text>
+  <text x="40" y="322" fill="#7ee787" font-size="12">✓ Booking #1008 recorded successfully (Gross Total: Rs. 1000.00)!</text>
+  <text x="40" y="342" fill="#58a6ff" font-size="12">✓ Trigger 'trg_update_seats_on_booking' fired:</text>
+  <text x="60" y="360" fill="#c9d1d9" font-size="12">Show #501 available seats updated from 30 -&gt; 26.</text>
+  <text x="40" y="380" fill="#7ee787" font-size="11">ACID Properties Preserved: Atomicity, Consistency, Isolation, Durability verified.</text>
+
+  <text x="25" y="415" fill="#00ff41" font-size="12">Enter your option (0-9): <tspan fill="#ffff00" font-weight="bold">4</tspan>  (Execute Movie Revenue Aggregation Query)</text>
+  <rect x="25" y="428" width="930" height="155" fill="#0d1117" rx="6" stroke="#30363d" stroke-width="1"/>
+  <text x="40" y="448" fill="#58a6ff" font-size="12" font-weight="bold">SQL: SELECT m.title, COUNT(b.booking_id) AS orders, SUM(b.total_amount) AS gross_revenue</text>
+  <text x="40" y="468" fill="#8b949e" font-size="11">-------------------------------------------------------------------------------</text>
+  <text x="40" y="486" fill="#c9d1d9" font-size="12">Avatar: The Way of Water     | 4 orders        | Rs. 5,050.00</text>
+  <text x="40" y="504" fill="#c9d1d9" font-size="12">Jailer                       | 2 orders        | Rs. 2,120.00</text>
+  <text x="40" y="522" fill="#c9d1d9" font-size="12">Leo                          | 0 orders        | Rs.     0.00</text>
+  <text x="40" y="542" fill="#7ee787" font-size="12">-------------------------------------------------------------------------------</text>
+  <text x="40" y="562" fill="#7ee787" font-size="12" font-weight="bold">Combined Confirmed Revenue: Rs. 7,170.00</text>
+
+  <text x="25" y="612" fill="#28c840" font-size="12">✓ Output records exported to program_execution_output.txt</text>
+</svg>

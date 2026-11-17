@@ -1,0 +1,66 @@
+===============================================================================
+   VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS), ERODE - 12
+          DEPARTMENT OF INFORMATION TECHNOLOGY - ACADEMIC YEAR 2026-27
+   MOVIE THEATRE TICKET BOOKING & BOX OFFICE ANALYSIS SYSTEM (SCENARIO 30)
+                 JAVA PROGRAMMING (25ITT32) - EXECUTION LOG
+===============================================================================
+
+----------------------------- MAIN MENU -----------------------------
+ 1. Browse All Movies (FR-01)
+ 2. Add New Movie (FR-01)
+ 3. View Theatre Screens (FR-02)
+ 4. View Show Schedules & Seat Availability (FR-03, FR-04)
+ 5. Schedule a New Movie Show (FR-03)
+ 6. Book Tickets (FR-05, FR-06)
+ 7. Cancel Booking & Claim Refund (FR-07)
+ 8. View Show Occupancy Report (FR-09)
+ 9. View Movie Revenue & Box Office Performance (FR-08)
+ 10. Run Multithreaded Concurrency Simulation (Unit 3)
+ 0. Exit System
+---------------------------------------------------------------------
+
+[TEST 1] BROWSING CURRENT MOVIES (FR-01):
+--------------------------------------------------------------------------------
+Movie ID | Title                        | Genre      | Lang    | Dur   | Rating 
+--------------------------------------------------------------------------------
+101      | Avatar: The Way of Water     | Sci-Fi     | English | 192 m | 8.8    
+102      | Jailer                       | Action     | Tamil   | 168 m | 8.5    
+103      | Leo                          | Action     | Tamil   | 164 m | 8.2    
+104      | Ponniyin Selvan Part 2       | Historical | Tamil   | 164 m | 8.4    
+105      | Interstellar: Re-release     | Sci-Fi     | English | 169 m | 8.9    
+106      | Oppenheimer                  | Biography  | English | 180 m | 8.9    
+
+[TEST 2] MANUAL TICKET BOOKING WITH THREAD-SAFE CONCURRENCY (FR-05, FR-06):
+--------------------------------------------------------------------------------
+Selected Show ID: 501 (Avatar: The Way of Water | Audi 1 - IMAX Laser)
+Customer Name   : Vaishnavi V
+Seats Requested : 4 tickets @ Rs. 250.00
+Payment Method  : UPI
+Status          : SUCCESS (Booking ID: 1001)
+Assigned Seats  : A1, A2, A3, A4
+Gross Amount    : Rs. 1000.00
+Remaining Seats : 26 available
+
+[TEST 3] OVERBOOKING PREVENTION VALIDATION (EXCEPTION HANDLING):
+--------------------------------------------------------------------------------
+Selected Show ID: 507 (Leo | Only 10 seats left)
+Seats Requested : 15 tickets
+System Response : Exception caught successfully:
+                 com.theatre.exception.SeatUnavailableException: 
+                 Booking Failed: Requested 15 seats, but only 10 seats are available for 'Leo'!
+
+[TEST 4] TIERED CANCELLATION ENGINE (>24 HOURS BEFORE SHOW):
+--------------------------------------------------------------------------------
+Cancelled Booking: 1001
+Hours Prior Show : 48.0 hrs (> 24 hr Tier-1 Policy)
+Refund Granted   : 90% (Rs. 900.00)
+Cancellation Fee : 10% (Rs. 100.00)
+Seats Restored   : 4 seats released back to Show #501 (Now 30 seats available)
+
+[TEST 5] AUTOMATED REGRESSION TEST SUITE EXECUTION:
+================================================================================
+ Total Tests Executed: 7
+ Passed               : 7 (100.0% Success Rate)
+ Failed               : 0
+ Time Elapsed         : 0.030 seconds
+================================================================================
